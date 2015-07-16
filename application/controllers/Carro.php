@@ -18,6 +18,12 @@ class Carro extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __consruct()
+	{
+		parent::__construct();
+		$this->data['titulo'] = "Carrinho de Compra";
+	}
+
 	public function index()
 	{
 		$this->load->view('carro');

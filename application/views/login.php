@@ -1,3 +1,9 @@
+<title><?php echo $titulo; ?></title>
+<?php 
+    echo "<link rel='stylesheet' href='".base_url('assets/bootstrap/css/bootstrap.min.css')."'/>";
+    echo "<script src='".base_url('assets/bootstrap/js/bootstrap.min.js')."'type='text/javascript' language='javascript'></script";
+?>
+
     <div class="container">    
         <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
             <div class="panel panel-info" >
