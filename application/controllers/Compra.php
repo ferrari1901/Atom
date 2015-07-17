@@ -12,6 +12,7 @@ class Compra extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('compra');
+
+		$this->load->view('compra', $this->data);
 	}
 }

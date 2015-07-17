@@ -26,6 +26,6 @@ class Carro extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('carro');
+		$this->load->view('carro', $this->data);
 	}
 }
