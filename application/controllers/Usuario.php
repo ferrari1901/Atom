@@ -41,14 +41,14 @@ class Usuario extends CI_Controller {
 			$usuario = new Usuarios();
 			$this->usuarios = $usuario->get_all();
 			foreach ($this->usuarios as $key => $value) {				
-				if ($value->login == $data['username'])
+				if ($value->login == $data['username'] && $value->senha == md5($data['senha']))
 				{
 					return true;
 				}
 			}
 			return false;
 		}catch (Exception $e){
-			throw new Exception($e->getMessage().'#101');
+			throw new Exception($e->getMessage().'#201');
 		}
 	}
 }
