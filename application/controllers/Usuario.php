@@ -41,7 +41,7 @@ class Usuario extends CI_Controller {
 			$usuario = new Usuarios();
 			$this->usuarios = $usuario->get_all();
 			foreach ($this->usuarios as $key => $value) {				
-				if ($value->login == $data['username'] && $value->senha == md5($data['senha']))
+				if ($value->login == $data['username'] && $value->senha == md5($data['password']))
 				{
 					return true;
 				}
